@@ -1,19 +1,16 @@
-import { useState } from "react";
-
-
-function Placeholder ({ height = '250px', width = '350px' }) {
-    const [isActive, setIsActive] = useState(false)
-        
+function Placeholder ({ g,y }) {
+    
+        console.log(g,y);
         return (
             <div
                 style={{
-                    background: isActive ? 'black' : 'whitesmoke',
-                    height: height,
-                    width: width,
-                    border:`1px solid ${isActive ? "whitesmoke":"black"}`,
+                    background: g === y ? 'black' : 'whitesmoke',
+                    height: "250px",
+                    width: "280px",
+                    border:`1px solid ${false ? "whitesmoke":"black"}`,
                 }}
-             onClick={()=>{setIsActive(!isActive)}}
             >
+            {g}
             </div>
         );
     };
