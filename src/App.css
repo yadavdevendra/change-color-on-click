@@ -1,5 +1,7 @@
 .App {
+  width: 80vw;
   display: flex;
   text-align: center;
-  margin: 0px 20pc 0px 19.2pc;
+  /* margin: 0px 20pc 0px 10pc; */
+  margin: 0 auto;
 }

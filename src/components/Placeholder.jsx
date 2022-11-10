@@ -1,13 +1,13 @@
-function Placeholder ({ g,y }) {
+function Placeholder ({g,x,y}) {
     
-        console.log(g,y);
+        console.log("inpute",g,x+","+y);
         return (
             <div
                 style={{
-                    background: g === y ? 'black' : 'whitesmoke',
+                    background:g === (`${x},${y}`)? 'black' : 'whitesmoke',
                     height: "250px",
                     width: "280px",
-                    border:`1px solid ${false ? "whitesmoke":"black"}`,
+                    border:`1px solid ${g === (`${x},${y}`)? "whitesmoke":"black"}`,
                 }}
             >
             {g}
